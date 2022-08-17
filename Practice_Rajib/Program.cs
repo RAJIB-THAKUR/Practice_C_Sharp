@@ -294,14 +294,14 @@ interface area
     }
 }
 
-public class rectangle:area
+public class rectangle : area
 {
     public int length;
     public int breadth;
-    public rectangle(int l,int b)
+    public rectangle(int l, int b)
     {
         this.length = l;
-        this.breadth = b;   
+        this.breadth = b;
     }
 
 
@@ -326,13 +326,13 @@ public class mainClass
         rectangle r = new rectangle(3, 4);
         r.printArea();
 
-        circle c =new circle();
+        circle c = new circle();
         c.radius = 4;
         c.printArea();
     }
 }
-#endregion
-*/
+#endregion*/
+
 
 
 
@@ -737,7 +737,7 @@ class Employee
     {
         get
         {
-            if (place.ToLower() =="eno")
+            if (place.ToLower() == "eno")
             {
                 return Eno;
             }
@@ -834,21 +834,21 @@ class classB
     public static void Main()
     {
         Console.WriteLine("WHAT IS THE SIzE OF THE ARRAY ?");
-        int size=Convert.ToInt32(Console.ReadLine());
+        int size = Convert.ToInt32(Console.ReadLine());
         classA.n = size;
 
         classA A1 = new classA();
-        for(int i = 0; i < size; i++)
+        for (int i = 0; i < size; i++)
         {
-            Console.Write("Enter element at index-{0} : ",i);
-            A1[i]=Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter element at index-{0} : ", i);
+            A1[i] = Convert.ToInt32(Console.ReadLine());
         }
 
         Console.WriteLine("\n|||||Printing your array elelments|||||");
         for (int i = 0; i < size; i++)
         {
             //Console.Write("Element at index-{0} : {1}\n",i, A1[i]);
-            Console.Write("{0} ",A1[i]);
+            Console.Write("{0} ", A1[i]);
         }
 
     }
